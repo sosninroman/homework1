@@ -6,7 +6,7 @@ configure_file(version.h.in ${PROJECT_SOURCE_DIR}/version.h)
 
 add_executable(helloworld main.cpp)
 
-add_library(helloworld_lib lib.cpp)
+add_library(helloworld_lib lib.cpp lib.h)
 
 set(CMAKE_CXX_STANDARD 17)
 set(BUILD_GMOCK OFF)
